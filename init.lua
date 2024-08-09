@@ -165,6 +165,9 @@ vim.opt.scrolloff = 20
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
+-- Custom by Sebastian
+-- Explore files
+vim.keymap.set('n', '<leader>e', '<cmd>Explore<CR>', { desc = 'Open [E]xplore menu' })
 
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
