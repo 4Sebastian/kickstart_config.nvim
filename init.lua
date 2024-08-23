@@ -809,6 +809,7 @@ require('lazy').setup({
       -- Custom by Sebastian
       -- Note, this change in highlight is specifically for the colorscheme 'evening'
       vim.cmd.hi 'EndOfBuffer ctermfg=231 ctermbg=236 guifg=#add8e6 guibg=#333333'
+      vim.cmd.hi 'NonText ctermfg=231 ctermbg=236 guifg=#add8e6 guibg=#333333'
       -- You can configure highlights by doing something like:
       vim.cmd.hi 'Comment gui=none'
     end,
