@@ -857,6 +857,20 @@ require('lazy').setup({
       require('mini.git').setup()
     end,
   },
+  {
+    'windwp/nvim-ts-autotag',
+    build = ':BufReadPre',
+    config = function()
+      require('nvim-ts-autotag').setup {
+        opts = {
+          -- Defaults
+          enable_close = true, -- Auto close tags
+          enable_rename = true, -- Auto rename pairs of tags
+          enable_close_on_slash = false, -- Auto close on trailing </
+        },
+      }
+    end,
+  },
   { -- Highlight, edit, and navigate code
     'nvim-treesitter/nvim-treesitter',
     build = ':TSUpdate',
